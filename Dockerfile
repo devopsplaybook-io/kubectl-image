@@ -1,8 +1,10 @@
 FROM alpine
 
 RUN apk add --no-cache \
-    kubectl \
-    gzip \
-    docker \
+    bash \
     curl \
-    bash
+    docker \
+    gawk \
+    gzip \
+    jq \
+    kubectl

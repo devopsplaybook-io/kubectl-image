@@ -1,4 +1,4 @@
-FROM alpine
+FROM alpine:3.21
 
 RUN apk add --no-cache \
     bash \
@@ -7,4 +7,8 @@ RUN apk add --no-cache \
     gawk \
     gzip \
     jq \
-    kubectl
+    kubectl \
+    aws-cli \
+    azure-cli \
+    google-cloud-sdk \
+    && rm -rf /var/cache/apk/*

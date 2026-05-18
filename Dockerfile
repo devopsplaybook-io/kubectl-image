@@ -9,6 +9,4 @@ RUN apk add --no-cache \
     jq \
     kubectl \
     aws-cli \
-    azure-cli \
-    google-cloud-sdk \
     && rm -rf /var/cache/apk/*
